@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Custom CSS for Figma Embed Responsiveness */
+.figma-embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio (450px height / 800px width = 0.5625) */
+  height: 0; /* Important for the padding-bottom trick */
+  overflow: hidden;
+  max-width: 100%;
+  background: #f8fafc; /* Optional: A subtle background while loading */
+  /* You already have rounded-lg and overflow-hidden on the div, which is good. */
+  /* border: 1px solid rgba(0, 0, 0, 0.1); -- You can add this if you want the border on the container,
+                                           -- but Figma's embed already applies a subtle border. */
+}
+
+.figma-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Remove any fixed width/height from here if you had them */
+  /* border: none; /* Figma embed has its own border, you can override if needed */
+}
