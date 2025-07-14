@@ -40,7 +40,7 @@ const Navbar = () => {
                 to={path}
                 className={`text-sm font-medium transition-colors duration-200 ${
                   isActive(path)
-                    ? 'text-purple-600 dark:text-purple-400'
+                    ? 'text-amber-600 dark:text-amber-400'
                     : 'text-[#666] dark:text-gray-400 hover:text-[#333] dark:hover:text-white'
                 }`}
               >
@@ -96,8 +96,8 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className={`text-lg font-medium transition-colors ${
                     isActive(path)
-                      ? 'text-purple-600 dark:text-purple-400'
-                      : 'text-gray-800 dark:text-gray-100 hover:text-purple-600 dark:hover:text-purple-400'
+                      ? 'text-amber-500 dark:text-amber-300'
+                      : 'text-gray-800 dark:text-gray-100 hover:text-amber-600 dark:hover:text-amber-400'
                   }`}
                 >
                   {label}
