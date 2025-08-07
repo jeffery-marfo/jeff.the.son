@@ -11,7 +11,7 @@ import Bus from '../assets/images/Bus.png';
 import FeatheryCare from '../assets/images/FeatheryCare.png';
 import SecretMemoir from '../assets/images/SecretMemoir.png';
 import nutriCheck from '../assets/images/nutriCheck.png'
-
+import gClients from '../assets/images/gClients.png'
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -25,6 +25,22 @@ const Projects = () => {
   ];
 
   const projects = [
+    {
+      id: "g-clients",
+      title: "G-Clients",
+      description:
+        "As part of the Software Development Track for Azubi Africa's Talent Mobility Program, I’m currently building G-Clients, a course management system designed to streamline course delivery and learner engagement.",
+      image: gClients,
+      tags: ["React", "Tailwind CSS", "GitHub"],
+      categories: ["software", "web"],
+      type: "development",
+      links: {
+        github: "https://github.com/jeffery-marfo/Azubi-G-Clients",
+        demo: "https://azubi-g-clients.vercel.app/",
+      },
+      fullDescription:
+        "As part of the Software Development Track for Azubi Africa's Talent Mobility Program, I’m currently building G-Clients, a course management system designed to streamline course delivery and learner engagement. The project follows a focused 4-week sprint plan to deliver core features incrementally while maintaining agility and transparency. Development Approach: Phase 1: Build the Admin Dashboard first to create a solid foundation for course and user management. Phase 2: Start with the Learner Platform to prioritize user engagement, then develop the Admin Dashboard to support backend operations.",
+    },
     {
       id: "nutricheck",
       title: "NutriCheck",
