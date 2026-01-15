@@ -13,6 +13,8 @@ import SecretMemoir from '../assets/images/SecretMemoir.png';
 import nutriCheck from '../assets/images/nutriCheck.png'
 import gClients from '../assets/images/gClients.png'
 import NRI from '../assets/images/NRI.png'
+import Azushop from '../assets/images/Azushop.png'
+
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -26,6 +28,22 @@ const Projects = () => {
   ];
 
   const projects = [
+    {
+      id: "azushop",
+      title: "Azushop",
+      description:
+        "As part of the Software Development Track for Azubi Africa’s Talent Mobility Program, I developed Azushop, an e-commerce application focused on delivering a smooth shopping experience.",
+      image: Azushop,
+      tags: ["React", "Tailwind CSS", "Framer Motion"],
+      categories: ["software", "web"],
+      type: "development",
+      links: {
+        github: "https://github.com/jeffery-marfo/AzuShop-Ecommerce",
+        demo: "https://azu-shop-ecommerce.vercel.app/",
+      },
+      fullDescription:
+        "As part of the Software Development Track for Azubi Africa’s Talent Mobility Program, I developed Azushop, an e-commerce application designed to provide users with a seamless online shopping experience while supporting secure transactions and efficient order management. The platform is built to connect customers with products easily and offer a smooth, responsive, and user-friendly interface.",
+    },
     {
       id: "new-relief-internanational",
       title: "New Relief International",
