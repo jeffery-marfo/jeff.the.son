@@ -12,6 +12,7 @@ import FeatheryCare from '../assets/images/FeatheryCare.png';
 import SecretMemoir from '../assets/images/SecretMemoir.png';
 import nutriCheck from '../assets/images/nutriCheck.png'
 import gClients from '../assets/images/gClients.png'
+import NRI from '../assets/images/NRI.png'
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -25,6 +26,22 @@ const Projects = () => {
   ];
 
   const projects = [
+    {
+      id: "new-relief-internanational",
+      title: "New Relief International",
+      description:
+        "New Relief International is a demo informational and community-focused website designed and developed to strengthen the digital presence of a Christian fellowship.",
+      image: NRI,
+      tags: ["React", "Tailwind CSS", "Framer Motion", "GSAP"],
+      categories: ["software", "web"],
+      type: "development",
+      links: {
+        github: "https://github.com/jeffery-marfo/newrelief.org",
+        demo: "https://newrelief-org.vercel.app/",
+      },
+      fullDescription:
+        "New Relief International is a Christian organization established in 2003 with a mission to reach people with the Gospel and nurture them into maturity in their walk with Jesus Christ. The organization envisions global reach and relevance, bringing together students, workers, professionals, and families from diverse backgrounds. Its core values include salvation, service, integrity, and leadership.",
+    },
     {
       id: "g-clients",
       title: "G-Clients",
@@ -417,7 +434,7 @@ const Projects = () => {
         <AnimatePresence>
           {selectedProject && (
             <motion.div
-              className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+              className="fixed inset-0 bg-black/35 bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50 p-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -434,7 +451,7 @@ const Projects = () => {
                 {/* Close Button */}
                 <motion.button
                   onClick={() => setSelectedProject(null)}
-                  className="absolute top-6 right-6 bg-red-500 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 hover:bg-red-600 transition-colors shadow-lg"
+                  className="absolute top-6 right-6 bg-gray-300 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 hover:bg-gray-600 transition-colors shadow-lg"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
