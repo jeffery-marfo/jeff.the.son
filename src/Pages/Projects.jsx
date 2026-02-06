@@ -14,6 +14,7 @@ import nutriCheck from '../assets/images/nutriCheck.png'
 import gClients from '../assets/images/gClients.png'
 import NRI from '../assets/images/NRI.png'
 import Azushop from '../assets/images/Azushop.png'
+import LizMens from '../assets/images/LizMens.png'
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -28,6 +29,21 @@ const Projects = () => {
   ];
 
   const projects = [
+    {
+      id: "edromɔ-naa",
+      title: "Liz-Men’s Catering(Edromɔ-Naa)",
+      description:
+        "Edromɔ-Naa is an ordering platform built to help a small food business sell online. Place orders, pay online and choose a delivery provider such as Bolt, Uber, or Yango.",
+      image: LizMens,
+      tags: ["React", "Paystack", "SailRides", "Framer Motion"],
+      categories: ["software", "web"],
+      type: "development",
+      links: {
+        demo: "https://liz-mens-bakery-gucv.vercel.app/",
+      },
+      fullDescription:
+        "Liz-Men’s Bakery Website is a full ordering platform built to help a small food business sell online. It allows customers to view available items, place orders, pay online with Paystack, and choose a delivery provider such as Bolt, Uber, or Yango. The project was created to replace manual ordering through chat and calls with a faster, more reliable system. It improves the customer experience while helping the business manage orders more efficiently.",
+    },
     {
       id: "azushop",
       title: "Azushop",
